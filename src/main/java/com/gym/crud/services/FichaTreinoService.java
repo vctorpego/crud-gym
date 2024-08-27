@@ -58,7 +58,6 @@ public class FichaTreinoService {
     private void setFichaTreinoFields(FichaTreinoModel fichaTreinoModel, FichaTreinoRecordDto fichaTreinoRecordDto) {
         fichaTreinoModel.setData(fichaTreinoRecordDto.data());
         fichaTreinoModel.setExercicios(fichaTreinoRecordDto.exercicios());
-        setAlunos(fichaTreinoModel, fichaTreinoRecordDto.alunoIds());
     }
 
     private void setAlunos(FichaTreinoModel fichaTreinoModel, Set<UUID> alunoIds) {

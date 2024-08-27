@@ -58,7 +58,6 @@ public class PlanoService {
     private void setPlanoFields(PlanoModel planoModel, PlanoRecordDto planoRecordDto) {
         planoModel.setNomePlano(planoRecordDto.nomePlano());
         planoModel.setValor(planoRecordDto.valor());
-        setAlunos(planoModel, planoRecordDto.alunoIds());
     }
 
     private void setAlunos(PlanoModel planoModel, Set<UUID> alunoIds) {

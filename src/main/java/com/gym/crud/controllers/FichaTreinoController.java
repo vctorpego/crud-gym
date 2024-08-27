@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.UUID;
 
 @RestController
-@RequestMapping("/gym/fichas-treino")
+@RequestMapping("/gym/fichasTreino")
 public class FichaTreinoController {
 
     private final FichaTreinoService fichaTreinoService;

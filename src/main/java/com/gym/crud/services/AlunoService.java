@@ -65,7 +65,6 @@ public class AlunoService {
         alunoModel.setEmail(alunoRecordDto.email());
         alunoModel.setTelefone(alunoRecordDto.telefone());
         setPlano(alunoModel, alunoRecordDto.planoId());
-        setFichasTreino(alunoModel, alunoRecordDto.fichaTreinoIds());
     }
 
     private void setPlano(AlunoModel alunoModel, UUID planoId) {

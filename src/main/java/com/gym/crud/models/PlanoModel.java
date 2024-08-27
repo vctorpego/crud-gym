@@ -15,7 +15,7 @@ public class PlanoModel implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private UUID id;
+    private UUID id; //Mudar para long
 
     @Column(nullable = false, unique = true)
     private String nomePlano;

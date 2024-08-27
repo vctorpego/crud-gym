@@ -1,11 +1,11 @@
 package com.gym.crud.dtos;
 
+import java.util.Date;
 import java.util.List;
-import java.util.Set;
 import java.util.UUID;
 
 public record FichaTreinoRecordDto(
-        String data,
+        Date data,
         List<String> exercicios,
-        Set<UUID> alunoIds
+        UUID alunoId
 ) {}

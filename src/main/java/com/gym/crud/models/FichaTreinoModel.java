@@ -3,11 +3,7 @@ package com.gym.crud.models;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.*;
 import java.io.Serializable;
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
-import java.util.UUID;
+import java.util.*;
 
 @Entity
 @Table(name = "TB_FICHA_TREINO")
@@ -19,7 +15,7 @@ public class FichaTreinoModel implements Serializable {
     private UUID id;
 
     @Column(nullable = false)
-    private String data;
+    private Date data;
 
     @Column(nullable = false, columnDefinition = "TEXT")
     private String descricao;  // Exemplo: "Supino:3x10;Agachamento:4x8"
@@ -37,11 +33,11 @@ public class FichaTreinoModel implements Serializable {
         this.id = id;
     }
 
-    public String getData() {
+    public Date getData() {
         return data;
     }
 
-    public void setData(String data) {
+    public void setData(Date data) {
         this.data = data;
     }
 
